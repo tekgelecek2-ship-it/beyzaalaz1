@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyza Alaz 😊❤️ Özel VIP Kanal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: radial-gradient(circle at top, #064e3b, #021f17, #010a08);
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 26px;
+      padding: 30px 20px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 14px 45px rgba(5, 150, 105, 0.3);
+    }
+    .avatar {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #10b981, #059669);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      margin: 0 auto 16px auto;
+      box-shadow: 0 0 30px rgba(16, 185, 129, 0.55);
+      border: 2px solid rgba(255, 255, 255, 0.35);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid #10b981;
+      color: #6ee7b7;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      color: #d1fae5;
+      font-size: 14px;
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+    .btn-main {
+      background: linear-gradient(135deg, #10b981, #047857);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 16px 20px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(16, 185, 129, 0.45);
+      transition: transform 0.15s ease;
+    }
+    .btn-main:active {
+      transform: scale(0.97);
+    }
+    .copy-box {
+      margin-top: 18px;
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px dashed rgba(16, 185, 129, 0.45);
+      border-radius: 14px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .copy-text {
+      font-size: 15px;
+      font-weight: 700;
+      color: #34d399;
+      font-family: monospace;
+    }
+    .copy-btn {
+      background: #10b981;
+      color: #022c22;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .copy-btn:active {
+      background: #059669;
+    }
+    .guide-box {
+      margin-top: 22px;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 14px;
+      padding: 14px;
+      text-align: left;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #e2e8f0;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .guide-title {
+      font-weight: 700;
+      color: #6ee7b7;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .copied-toast {
+      position: fixed;
+      bottom: 25px;
+      background: #10b981;
+      color: #022c22;
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 800;
+      display: none;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="badge">🔞 YALNIZCA +18 ÖZELDİR</div>
+    <div class="avatar">💖</div>
+    <h1>Beyza Alaz 😊❤️</h1>
+    <p class="subtitle">Hoş geldin bitanem ❤️<br>+18 özel içeriklerim ve kanalıma katılmak için dokun!</p>
+
+    <!-- Ana Telegram Butonu -->
+    <button onclick="handleOpen()" class="btn-main">
+      <span>Kanala Katıl 😊❤️</span>
+    </button>
+
+    <!-- Kullanıcı Adı Kopyalama Alanı -->
+    <div class="copy-box">
+      <div>
+        <span style="font-size: 11px; color:#94a3b8; display:block;">Kanal Adresi:</span>
+        <span class="copy-text">@beyzaalaz</span>
+      </div>
+      <button class="copy-btn" onclick="copyUsername()">Kopyala 💖</button>
+    </div>
+
+    <!-- TikTok Dahili Tarayıcı Engeli Rehberi -->
+    <div class="guide-box">
+      <div class="guide-title">
+        <span>⚠️</span> Buton açılmıyor mu?
+      </div>
+      1. Sağ üstteki <b>üç noktaya (⋮)</b> dokun.<br>
+      2. <b>"Varsayılan tarayıcıda aç"</b> seçeneğine tıkla.<br>
+      3. Veya kullanıcı adını kopyalayıp Telegram arama yerine <b>beyzaalaz</b> yaz ❤️️
+    </div>
+  </div>
+
+  <div id="toast" class="copied-toast">Kullanıcı adı kopyalandı! 💖</div>
+
+  <script>
+    function handleOpen() {
+      // 1. Önce doğrudan Telegram uygulamasını başlatmayı dene
+      window.location.href = "tg://resolve?domain=beyzaalaz";
+
+      // 2. TikTok bloklarsa 600ms sonra web t.me linkine yönlendir
+      setTimeout(function() {
+        window.location.href = "https://t.me/beyzaalaz";
+      }, 600);
+    }
+
+    function copyUsername() {
+      navigator.clipboard.writeText("beyzaalaz").then(function() {
+        showToast();
+      }).catch(function() {
+        const el = document.createElement('textarea');
+        el.value = 'beyzaalaz';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        showToast();
+      });
+    }
+
+    function showToast() {
+      const toast = document.getElementById("toast");
+      toast.style.display = "block";
+      setTimeout(function() {
+        toast.style.display = "none";
+      }, 2500);
+    }
+  </script>
+
+</body>
+  </html>
